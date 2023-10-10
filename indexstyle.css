@@ -114,7 +114,7 @@ header::after {
     color: #fff; /* Set text color */
     font-size: 1rem; /* Set font size */
     line-height: 1.8; /* Set line height */
-    max-width: 700px; /* Set a maximum width for the paragraph (adjust the value as needed) */
+    max-width: 800px; /* Set a maximum width for the paragraph (adjust the value as needed) */
     margin: 0 auto; /* Center the paragraph horizontally within its container */
 }
 
