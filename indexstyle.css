@@ -65,7 +65,7 @@ header::after {
 
 /* Style the header section with background image for the Publications page */
 .header.publications {
-    background-image: url('PhotosLab.jpg'); /* Set background image */
+    background-image: url('PhotosLab.JPG'); /* Set background image */
     background-size: cover; /* Scale background image to cover the container */
     background-position: center; /* Center the background image */
     position: relative; /* Position relative for child elements */
