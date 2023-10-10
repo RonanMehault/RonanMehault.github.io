@@ -65,7 +65,7 @@ header::after {
 
 /* Style the header section with background image for the Publications page */
 .header.publications {
-    background-image: url('PhotosLab.JPG'); /* Set background image */
+    background-image: url('PhotosLab.jpg'); /* Set background image */
     background-size: cover; /* Scale background image to cover the container */
     background-position: center; /* Center the background image */
     position: relative; /* Position relative for child elements */
@@ -107,6 +107,7 @@ header::after {
 /* Style the header title */
 .description h1 {
     color: #48D1CC; /* Set text color */
+	font-size: 24px; /* Adjust the font size as needed */
 }
 
 /* Style the header paragraph */
@@ -125,7 +126,7 @@ header::after {
     border-radius: 0; /* Remove button border radius */
     color: #000; /* Button text color */
     padding: 5px 10px; /* Adjust padding for button size */
-    font-size: 18px; /* Set font size for button text */
+    font-size: 16px; /* Set font size for button text */
     margin-top: 20px; /* Move the button farther down from the paragraph */
 }
 
@@ -193,6 +194,49 @@ header::after {
     padding: 40px 0; /* Padding for the copyright section */
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000000; /* Black */
+}
+
+th {
+    background-color: #48D1CC; /* Black */
+    color: #FFFFFF; /* White */
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid #000000; /* Black */
+	font-size: 16px; /* Adjust font size as needed */
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFF0; /* Ivory */
+}
+
+tr:nth-child(odd) {
+    background-color: #E6E6FA; /* Lavender for alternating pattern with Ivory*/
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #DDD; /* Light gray */
+	font-size: 10px; /* Adjust font size as needed */
+}
+
+/* Add margin to the first table (Peer-Reviewed Papers) for spacing */
+table.peerreviewed) {
+    margin-top: 10px; /* Adjust the margin-top value as needed to control the spacing */
+    margin-bottom: 30px; /* Adjust the margin-bottom value as needed to control the spacing */
+}
+
+/* Add margin to the second table (Book Chapters) for spacing */
+table.bookchapters {
+    margin-top: 10px; /* Adjust the margin-top value as needed to control the spacing */
+    margin-bottom: 30px; /* Adjust the margin-bottom value as needed to control the spacing */
+}
+
 /* Media query for smaller screen sizes */
 @media (max-width: 575.98px) {
     /* Adjust styles for smaller screens in the description section */
@@ -219,31 +263,3 @@ header::after {
     }
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    border: 2px solid #000000; /* Black */
-}
-
-th {
-    background-color: #48D1CC; /* Black */
-    color: #FFFFFF; /* White */
-    font-weight: bold;
-    text-align: left;
-    padding: 8px;
-    border-bottom: 2px solid #000000; /* Black */
-}
-
-tr:nth-child(even) {
-    background-color: #FFFFF0; /* Ivory */
-}
-
-tr:nth-child(odd) {
-    background-color: #E6E6FA; /* Lavender for alternating pattern with Ivory*/
-}
-
-td {
-    text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #DDD; /* Light gray */
-}
