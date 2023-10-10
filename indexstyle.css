@@ -114,7 +114,7 @@ header::after {
     color: #fff; /* Set text color */
     font-size: 1rem; /* Set font size */
     line-height: 1.8; /* Set line height */
-    max-width: 800px; /* Set a maximum width for the paragraph (adjust the value as needed) */
+    max-width: 700px; /* Set a maximum width for the paragraph (adjust the value as needed) */
     margin: 0 auto; /* Center the paragraph horizontally within its container */
 }
 
@@ -216,16 +216,6 @@ header::after {
     /* Remove margin for the features section on smaller screens */
     .features {
         margin: 0;
-    }
-	
-	 /* Adjust styles for the footer section on smaller screens */
-    .page-footer {
-        padding: 30px 0; /* Reduce footer padding on smaller screens */
-    }
-
-    /* Adjust styles for the copyright information in the footer on smaller screens */
-    .footer-copyright {
-        padding: 20px 0; /* Reduce padding for the copyright section on smaller screens */
     }
 }
 
