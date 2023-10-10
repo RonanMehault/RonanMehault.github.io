@@ -1,0 +1,250 @@
+/* Reset default padding and margin for the entire page */
+body {
+    padding: 0;
+    margin: 0;
+    background: #D2B48C; /* Set background color */
+}
+
+/* Style the navigation bar */
+.navbar {
+    background:#D2B48C; /* Set background color */
+}
+
+/* Style navigation links and brand text */
+.nav-link,
+.navbar-brand {
+    color: #fff; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style individual navigation links */
+.nav-link {
+    margin-right: 1em !important; /* Add right margin to separate links */
+}
+
+/* Change link color on hover */
+.nav-link:hover {
+    color: #000; /* Set text color on hover */
+}
+
+/* Adjust alignment of navigation links to the right */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Style the header section with background image */
+.header {
+    background-image: url('saintmalo.jpg'); /* Set background image */
+    background-size: cover; /* Scale background image to cover the container */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for child elements */
+}
+
+/* Add a caption to the header background image for the Home page*/
+header::after {
+    content: "La Guimorais Beach, Brittany, France (Credits: R. Mehault 2022)"; /* Caption text */
+    position: absolute; /* Position absolutely within the header */
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    font-style: italic; /* Make the caption italic */
+    font-size: 12px; /* Adjust font size as needed */
+    background: rgba(255, 255, 255, 0.4); /* Background color for the caption */
+    padding: 2px; /* Add padding to the caption */
+    color: #000; /* Text color for the caption */
+}
+	
+/* Create an overlay for the header background image */
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2); /* Overlay background color */
+}
+
+/* Style the header section with background image for the Publications page */
+.header.publications {
+    background-image: url('PhotosLab.jpg'); /* Set background image */
+    background-size: cover; /* Scale background image to cover the container */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for child elements */
+}
+
+/* Add a caption to the header background image for the Publications page */
+.header.publications::after { /* Use ::after instead of :after */
+    content: "Artifacts of the Meadowood Interaction Sphere (Credits: R. Mehault 2014)"; /* Caption text */
+    position: absolute; /* Position absolutely within the header */
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    font-style: italic; /* Make the caption italic */
+    font-size: 12px; /* Adjust font size as needed */
+    background: rgba(255, 255, 255, 0.4); /* Background color for the caption */
+    padding: 2px; /* Add padding to the caption */
+    color: #000; /* Text color for the caption */
+}
+
+/* Create an overlay for the header background image for the Publications page */
+.overlay.publications {
+    content: "";
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4); /* Overlay background color */
+}
+
+
+/* Style the description section */
+.description {
+    left: 50%; /* Center horizontally */
+    position: absolute; /* Position absolutely within the header */
+    top: 45%; /* Adjust vertical position */
+    transform: translate(-50%, -55%); /* Center vertically */
+    text-align: center; /* Center-align text */
+}
+
+/* Style the header title */
+.description h1 {
+    color: #48D1CC; /* Set text color */
+}
+
+/* Style the header paragraph */
+.description p {
+    color: #fff; /* Set text color */
+    font-size: 1.1rem; /* Set font size */
+    line-height: 1.8; /* Set line height */
+    max-width: 700px; /* Set a maximum width for the paragraph (adjust the value as needed) */
+    margin: 0 auto; /* Center the paragraph horizontally within its container */
+}
+
+/* Style buttons in the description section */
+.description button {
+    border: 0.8px solid #48D1CC; /* Button border */
+    background: #48D1CC; /* Button background color */
+    border-radius: 0; /* Remove button border radius */
+    color: #000; /* Button text color */
+    padding: 5px 10px; /* Adjust padding for button size */
+    font-size: 18px; /* Set font size for button text */
+    margin-top: 20px; /* Move the button farther down from the paragraph */
+}
+
+/* Change button style on hover */
+.description button:hover {
+    border: 1px solid #fff; /* Button border on hover */
+    background: #fff; /* Button background color on hover */
+    color: #000; /* Button text color on hover */
+}
+
+/* Style the features section */
+.features {
+    margin: 4em auto; /* Set margins for the features section */
+    padding: 1em; /* Set padding for the features section */
+    position: relative; /* Position relative for child elements */
+}
+
+/* Style feature titles */
+.feature-title {
+    color: #333; /* Set feature title text color */
+    font-size: 1.3rem; /* Set feature title font size */
+    font-weight: 700; /* Set feature title font weight */
+    margin-bottom: 20px; /* Set margin at the bottom of titles */
+    text-transform: uppercase; /* Uppercase feature titles */
+}
+
+/* Add shadow and margin to feature images */
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
+}
+
+/* Style form controls and input elements in the features section */
+.features .form-control,
+.features input {
+    border-radius: 0; /* Remove border radius for form controls */
+}
+
+/* Style buttons in the features section */
+.features .btn {
+    background-color: #228B22; /* Button background color */
+    border: 1px solid #228B22; /* Button border */
+    color: #fff; /* Button text color */
+    margin-top: 20px; /* Set margin at the top of buttons */
+}
+
+/* Change button style on hover in the features section */
+.features .btn:hover {
+    background-color: #333; /* Button background color on hover */
+    border: 1px solid #333; /* Button border on hover */
+}
+
+/* Style the page footer */
+.page-footer {
+    background-color: #222; /* Footer background color */
+    color: #ccc; /* Footer text color */
+    padding: 60px 0 30px; /* Padding for the footer */
+}
+
+/* Style the copyright information in the footer */
+.footer-copyright {
+    color: #666; /* Copyright text color */
+    padding: 40px 0; /* Padding for the copyright section */
+}
+
+/* Media query for smaller screen sizes */
+@media (max-width: 575.98px) {
+    /* Adjust styles for smaller screens in the description section */
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em; /* Increase font size for header title */
+    }
+
+    .description p {
+        font-size: 1.2rem; /* Increase font size for paragraph text */
+    }
+
+    /* Remove margin for the features section on smaller screens */
+    .features {
+        margin: 0;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #000000; /* Black */
+}
+
+th {
+    background-color: #48D1CC; /* Black */
+    color: #FFFFFF; /* White */
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid #000000; /* Black */
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFF0; /* Ivory */
+}
+
+tr:nth-child(odd) {
+    background-color: #E6E6FA; /* Lavender for alternating pattern with Ivory*/
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #DDD; /* Light gray */
+}
