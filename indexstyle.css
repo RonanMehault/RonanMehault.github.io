@@ -95,7 +95,6 @@ header::after {
     background: rgba(0, 0, 0, 0.4); /* Overlay background color */
 }
 
-
 /* Style the description section */
 .description {
     left: 50%; /* Center horizontally */
@@ -113,7 +112,7 @@ header::after {
 /* Style the header paragraph */
 .description p {
     color: #fff; /* Set text color */
-    font-size: 1.1rem; /* Set font size */
+    font-size: 1rem; /* Set font size */
     line-height: 1.8; /* Set line height */
     max-width: 700px; /* Set a maximum width for the paragraph (adjust the value as needed) */
     margin: 0 auto; /* Center the paragraph horizontally within its container */
