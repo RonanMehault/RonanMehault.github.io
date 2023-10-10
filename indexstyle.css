@@ -217,6 +217,16 @@ header::after {
     .features {
         margin: 0;
     }
+	
+	 /* Adjust styles for the footer section on smaller screens */
+    .page-footer {
+        padding: 30px 0; /* Reduce footer padding on smaller screens */
+    }
+
+    /* Adjust styles for the copyright information in the footer on smaller screens */
+    .footer-copyright {
+        padding: 20px 0; /* Reduce padding for the copyright section on smaller screens */
+    }
 }
 
 table {
