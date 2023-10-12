@@ -237,6 +237,37 @@ table.bookchapters {
     margin-bottom: 30px; /* Adjust the margin-bottom value as needed to control the spacing */
 }
 
+/* Style the header section with background image for the Contact page */
+.header.contact {
+    background-image: url('GraveLake.jpg'); /* Set background image */
+    background-size: cover; /* Scale background image to cover the container */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for child elements */
+}
+
+/* Add a caption to the header background image for the Contact page */
+.header.contact::after { /* Use ::after instead of :after */
+    content: "Grave Lake, BC, Canada (Credits: R. Mehault 2022)"; /* Caption text */
+    position: absolute; /* Position absolutely within the header */
+    bottom: 10px; /* Distance from the bottom */
+    left: 10px; /* Distance from the left */
+    font-style: italic; /* Make the caption italic */
+    font-size: 12px; /* Adjust font size as needed */
+    background: rgba(255, 255, 255, 0.4); /* Background color for the caption */
+    padding: 2px; /* Add padding to the caption */
+    color: #000; /* Text color for the caption */
+}
+
+/* Create an overlay for the header background image for the Publications page */
+.overlay.contact {
+    content: "";
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1); /* Overlay background color */
+	
 /* Media query for smaller screen sizes */
 @media (max-width: 575.98px) {
     /* Adjust styles for smaller screens in the description section */
